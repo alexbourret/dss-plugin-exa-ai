@@ -1,0 +1,28 @@
+{
+"id": "search-exa-ai",
+    "meta": {
+        
+        "label": "Search The Web (Exa-AI)"
+    },
+    
+    "params" : [
+        {
+            "name": "auth_type",
+            "label": "Type of authentication",
+            "type": "SELECT",
+            "selectChoices": [
+                {
+                    "value": "api_key",
+                    "label": "API key"
+                }
+            ]
+        },
+        {
+            "name": "api_key",
+            "label": "API Key",
+            "type": "PRESET",
+            "parameterSetId": "api-key",
+            "visibilityCondition": "model.auth_type == 'api_key'"
+        }
+    ]
+}
