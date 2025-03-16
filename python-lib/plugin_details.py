@@ -59,6 +59,10 @@ def get_context_details():
 def get_initialization_string():
     plugin_id, plugin_version = get_plugin_details()
     beta_version = get_beta_version()
-    full_version = plugin_version if not beta_version else "{}-beta.{}".format(plugin_version, beta_version)
+    full_version = plugin_version if not beta_version else "{}-beta.{}".format(
+        plugin_version, beta_version
+    )
     context_details = get_context_details()
-    return "Starting plugin {} v{}. Kernel context:{}".format(plugin_id, full_version, context_details)
+    return "Starting plugin {} v{}. Kernel context:{}".format(
+        plugin_id, full_version, context_details
+    )
