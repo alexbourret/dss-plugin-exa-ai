@@ -6,6 +6,7 @@ from exaai_commons import (
 from safe_logger import SafeLogger
 from plugin_details import get_initialization_string
 
+
 logger = SafeLogger("exa-ai connector", forbiden_keys=["exa_api_key"])
 
 
